@@ -1,21 +1,14 @@
+import Carousels from "@/components/Carousel";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 
 const page = () => {
   return (
     <>
       <Header />
-
       <section
         id="top"
         className="overflow-hidden sm:grid sm:grid-cols-2 sm:items-center"
@@ -48,7 +41,7 @@ const page = () => {
           height={500}
         />
       </section>
-
+      <Carousels />
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
           <header className="text-center">
@@ -68,7 +61,7 @@ const page = () => {
               <a href="#" className="group relative block">
                 <Image
                   src="https://images.unsplash.com/photo-1618898909019-010e4e234c55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-                  alt=""
+                  alt="books"
                   className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90"
                   width={500}
                   height={500}
@@ -90,7 +83,7 @@ const page = () => {
               <a href="#" className="group relative block">
                 <Image
                   src="https://images.unsplash.com/photo-1624623278313-a930126a11c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-                  alt=""
+                  alt="books"
                   className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90"
                   width={500}
                   height={500}
@@ -112,7 +105,7 @@ const page = () => {
               <a href="#" className="group relative block">
                 <Image
                   src="https://images.unsplash.com/photo-1593795899768-947c4929449d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80"
-                  alt=""
+                  alt="books"
                   className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90"
                   width={500}
                   height={500}
