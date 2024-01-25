@@ -1,8 +1,7 @@
-
 const Logo = () => {
   return (
     <div>
-      <div className="flex justify-center text-blue-600 lg:justify-start">
+      <div className="flex justify-center text-gray-600 lg:justify-start">
         <svg
           className="h-8"
           viewBox="0 0 118 24"
@@ -53,5 +52,5 @@ const Logo = () => {
       </div>
     </div>
   );
-}
-export default Logo
+};
+export default Logo;
