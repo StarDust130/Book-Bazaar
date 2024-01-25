@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
             <Link
               href="#top"
-              className="inline-block rounded-full bg-gray-600 p-2 text-white shadow transition hover:bg-gray-500 sm:p-3 lg:p-4"
+              className="inline-block rounded-full bg-black dark:bg-white dark:text-black p-2 text-white shadow transition hover:bg-gray-800 sm:p-3 lg:p-4"
             >
               <span className="sr-only">Back to top</span>
 
@@ -32,7 +32,7 @@ const Footer = () => {
             <div>
               <Logo />
 
-              <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 lg:text-left">
+              <p className="mx-auto mt-6 max-w-md text-center leading-relaxed  lg:text-left">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Incidunt consequuntur amet culpa cum itaque neque.
               </p>
@@ -40,40 +40,28 @@ const Footer = () => {
 
             <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">
               <li>
-                <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
-                  href="/"
-                >
+                <a className=" transition " href="/">
                   {" "}
                   About{" "}
                 </a>
               </li>
 
               <li>
-                <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
-                  href="/"
-                >
+                <a className=" transition " href="/">
                   {" "}
                   Services{" "}
                 </a>
               </li>
 
               <li>
-                <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
-                  href="/"
-                >
+                <a className=" transition " href="/">
                   {" "}
                   Projects{" "}
                 </a>
               </li>
 
               <li>
-                <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
-                  href="/"
-                >
+                <a className=" transition " href="/">
                   {" "}
                   Blog{" "}
                 </a>
@@ -81,8 +69,14 @@ const Footer = () => {
             </ul>
           </div>
 
-          <p className="mt-12 text-center text-sm text-gray-500 lg:text-right">
-            Copyright StarDust🌟 &copy; 2024. All rights reserved.
+          <p className="mt-12 text-center text-sm  lg:text-right">
+            Copyright{" "}
+            <span className="dark:hover:text-yellow-400 font-semibold text-blue-500 hover:text-blue-700 dark:text-yellow-300 ">
+              <Link href="https://github.com/StarDust130/Book-Bazaar">
+                StarDust🌟
+              </Link>
+            </span>{" "}
+            &copy; 2024. All rights reserved.
           </p>
         </div>
       </footer>

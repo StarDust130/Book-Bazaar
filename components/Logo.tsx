@@ -1,7 +1,7 @@
 const Logo = () => {
   return (
     <div>
-      <div className="flex justify-center text-gray-600 lg:justify-start">
+      <div className="flex justify-center  lg:justify-start">
         <svg
           className="h-8"
           viewBox="0 0 118 24"

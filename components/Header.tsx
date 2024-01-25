@@ -25,7 +25,7 @@ const Header = () => {
     <div>
       <header className="">
         <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
-          <a className="block text-gray-600" href="/">
+          <a className="block " href="/">
             <span className="sr-only">Home</span>
 
             <Logo />
@@ -36,7 +36,7 @@ const Header = () => {
               <ul className="flex items-center gap-6 text-sm">
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75"
+                    className=""
                     href="/"
                   >
                     {" "}
@@ -46,7 +46,7 @@ const Header = () => {
 
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75"
+                    className=""
                     href="/"
                   >
                     {" "}
@@ -56,7 +56,7 @@ const Header = () => {
 
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75"
+                    className=""
                     href="/"
                   >
                     {" "}
@@ -66,7 +66,7 @@ const Header = () => {
 
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75"
+                    className=""
                     href="/"
                   >
                     {" "}
@@ -76,7 +76,7 @@ const Header = () => {
 
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75"
+                    className=""
                     href="/"
                   >
                     {" "}
@@ -86,7 +86,7 @@ const Header = () => {
 
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75"
+                    className=""
                     href="/"
                   >
                     {" "}

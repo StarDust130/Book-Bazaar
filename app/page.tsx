@@ -40,43 +40,52 @@ const page = () => {
           src="/bk-1.jpeg"
           width={700}
           height={500}
-          className="rounded-lg shadow-2xl"
+          className="rounded-lg "
         />
       </section>
-      {/* <section id="#top" className="">
-        <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
-          <div className="mx-auto max-w-xl text-center">
-            <h1 className="text-3xl font-extrabold sm:text-5xl">
-              Understand User Flow.
-              <strong className="font-extrabold text-gray-700 sm:block">
-                {" "}
-                Increase Conversion.{" "}
-              </strong>
-            </h1>
+      <section className="">
+        <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="text-3xl font-bold  sm:text-4xl">
+              Dive into the World of Books
+            </h2>
 
-            <p className="mt-4 sm:text-xl/relaxed">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-              illo tenetur fuga ducimus numquam ea!
+            <p className="mt-4 ">
+              Discover a curated collection of literary treasures on our book
+              platform. Immerse yourself in captivating stories, expand your
+              knowledge, and find your next great read. Join a community of book
+              enthusiasts who trust our platform to explore, share, and indulge
+              in the magic of literature.
             </p>
+          </div>
 
-            <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <a
-                className="block w-full rounded bg-gray-600 px-12 py-3 text-sm font-medium  shadow hover:bg-gray-700 focus:outline-none focus:ring active:bg-gray-500 sm:w-auto"
-                href="/get-started"
-              >
-                Get Started
-              </a>
+          <div className="mt-8 sm:mt-12">
+            <dl className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:divide-x sm:divide-gray-100">
+              <div className="flex flex-col px-4 py-8 text-center">
+                <dt className="order-last text-lg font-medium ">Total Sales</dt>
 
-              <a
-                className="block w-full rounded px-12 py-3 text-sm font-medium text-gray-600 shadow hover:text-gray-700 focus:outline-none focus:ring active:text-gray-500 sm:w-auto"
-                href="/about"
-              >
-                Learn More
-              </a>
-            </div>
+                <dd className="text-4xl font-extrabold  md:text-5xl">$4.8m</dd>
+              </div>
+
+              <div className="flex flex-col px-4 py-8 text-center">
+                <dt className="order-last text-lg font-medium text-gray-500">
+                  Official Addons
+                </dt>
+
+                <dd className="text-4xl font-extrabold  md:text-5xl">24</dd>
+              </div>
+
+              <div className="flex flex-col px-4 py-8 text-center">
+                <dt className="order-last text-lg font-medium ">
+                  Total Addons
+                </dt>
+
+                <dd className="text-4xl font-extrabold  md:text-5xl">86</dd>
+              </div>
+            </dl>
           </div>
         </div>
-      </section> */}
+      </section>
       <Carousels />
       {/* <section>
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
@@ -199,11 +208,11 @@ const page = () => {
                     />
 
                     <div className="mt-3">
-                      <h3 className="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4">
+                      <h3 className="font-medium  group-hover:underline group-hover:underline-offset-4">
                         Simple Watch
                       </h3>
 
-                      <p className="mt-1 text-sm text-gray-700">$150</p>
+                      <p className="mt-1 text-sm ">$150</p>
                     </div>
                   </a>
                 </li>
@@ -219,11 +228,11 @@ const page = () => {
                     />
 
                     <div className="mt-3">
-                      <h3 className="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4">
+                      <h3 className="font-medium  group-hover:underline group-hover:underline-offset-4">
                         Simple Watch
                       </h3>
 
-                      <p className="mt-1 text-sm text-gray-700">$150</p>
+                      <p className="mt-1 text-sm ">$150</p>
                     </div>
                   </a>
                 </li>
