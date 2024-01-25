@@ -1,7 +1,4 @@
-
 const BookList = () => {
-  return (
-    <div>BookList</div>
-  )
-}
-export default BookList
+  return <>Book List</>;
+};
+export default BookList;
