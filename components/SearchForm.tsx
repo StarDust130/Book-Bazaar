@@ -1,8 +1,9 @@
+// Importing necessary dependencies
 "use client";
 import { Input } from "@/components/ui/input";
 import { IoSearch } from "react-icons/io5";
 import { useGlobalContext } from "@/app/context";
-import { useRef, useEffect, FormEvent } from "react";
+import { useRef, useEffect, FormEvent, KeyboardEvent } from "react";
 import { useRouter } from "next/navigation";
 
 const SearchForm: React.FC = () => {
@@ -30,6 +31,20 @@ const SearchForm: React.FC = () => {
     router.push("/book");
   };
 
+  //! Handle Enter Key
+  const handleEnter = (e: KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      e.preventDefault(); // Prevent the default form submission behavior
+      handleSubmit(e);
+
+      // Scroll down after form submission
+      window.scroll({
+        top: window.innerHeight, // You can adjust this value based on your requirements
+        behavior: "smooth", // Add smooth scrolling animation
+      });
+    }
+  };
+
   return (
     <div className="mt-10 flex items-center justify-center">
       <div className="relative">
@@ -38,7 +53,8 @@ const SearchForm: React.FC = () => {
           type="text"
           onSubmit={handleSubmit}
           ref={searchText}
-          className="bg-gray-50 text-black w-80 md:w-[40rem] h-10 px-5  rounded-xl border border-gray-300 focus:outline-none focus:border-indigo-500"
+          onKeyDown={handleEnter}
+          className="bg-gray-50 text-black w-80 md:w-[40rem] h-10 px-5 rounded-xl border border-gray-300 focus:outline-none focus:border-indigo-500"
         />
         <div
           onClick={handleSubmit}

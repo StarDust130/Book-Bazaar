@@ -1,13 +1,5 @@
 import Image from "next/image";
-import BookList from "./BookList";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+
 import Link from "next/link";
 
 interface BookProps {
@@ -22,7 +14,7 @@ const Book = ({ key, item }: BookProps) => {
     <>
       <article
         key={id}
-        className="group border rounded-xl overflow-hidden transform transition-transform md:hover:scale-105 cursor-pointer hover:shadow-xl shadow-lg md:mx-20 "
+        className="group border border-gray-500 rounded-xl overflow-hidden transform transition-transform md:hover:scale-105 cursor-pointer hover:shadow-xl shadow-xl md:my-5 dark:shadow-xl dark:hover:shadow-xl"
       >
         <Link href={`/book/${item.id}`}>
           <Image
@@ -30,23 +22,28 @@ const Book = ({ key, item }: BookProps) => {
             height={100}
             alt="Book Cover"
             src={cover_img}
-            className="h-56 w-full rounded-xl object-contain transition-transform"
+            className="h-56 w-full rounded-xl object-fill transition-transform"
           />
         </Link>
 
-        <div className="p-4">
-          <a href="#" className="hover:text-blue-500">
+        <div className="p-4 text-center">
+          <Link
+            href={`/book/${item.id}`}
+            passHref
+            className="hover:text-blue-500"
+          >
             <h3 className="mt-2 line-clamp-3 text-xl font-bold">{title}</h3>
-          </a>
+          </Link>
 
-          <p className="mt-2 line-clamp-3 text-sm/relaxed font-bold">
-            {author}
+          <p className="mt-2 line-clamp-3 text-sm text-gray-700 font-semibold">
+            {Array.isArray(author) ? author.join(", ") : ""}
           </p>
-          <p className="mt-2 line-clamp-3 text-sm/relaxed">
-            <span className="font-bold">Total Edition:</span> {edition_count}
+          <p className="mt-2 line-clamp-3 text-sm text-gray-700">
+            <span className="font-semibold">Total Edition:</span>{" "}
+            {edition_count}
           </p>
-          <p className="mt-2 line-clamp-3 text-sm/relaxed">
-            <span className="font-bold">First Publish Year:</span>{" "}
+          <p className="mt-2 line-clamp-3 text-sm text-gray-700">
+            <span className="font-semibold">First Publish Year:</span>{" "}
             {first_publish_year}
           </p>
         </div>
