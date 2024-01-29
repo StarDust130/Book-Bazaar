@@ -7,6 +7,7 @@ interface BookProps {
   item: any;
 }
 
+
 const Book = ({ key, item }: BookProps) => {
   const { id, title, cover_img, author, edition_count, first_publish_year } =
     item;
